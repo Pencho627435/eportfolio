@@ -9,6 +9,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\FamiliasProfesionalesController;
 use App\Http\Controllers\EvidenciasController;
 use App\Http\Controllers\PortfolioImportController;
+use App\Http\Controllers\SkillAnalyticsController;
 
 
 Route::get('/', [HomeController::class, 'getHome'])
@@ -113,4 +114,8 @@ Route::middleware(['auth'])->group(function () {
         ->name('portfolio.import.github');
 });
 
+
+
+
 require __DIR__.'/auth.php';
+require __DIR__.'/analisis.php';
