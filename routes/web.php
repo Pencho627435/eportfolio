@@ -10,6 +10,7 @@ use App\Http\Controllers\FamiliasProfesionalesController;
 use App\Http\Controllers\EvidenciasController;
 use App\Http\Controllers\PortfolioImportController;
 use App\Http\Controllers\SkillAnalyticsController;
+use App\Http\Controllers\PortfolioExportController;
 
 
 Route::get('/', [HomeController::class, 'getHome'])
@@ -119,3 +120,4 @@ Route::middleware(['auth'])->group(function () {
 
 require __DIR__.'/auth.php';
 require __DIR__.'/analisis.php';
+require __DIR__.'/exports.php';
