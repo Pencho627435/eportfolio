@@ -102,7 +102,7 @@ Route::prefix('evidencias')->group(function () {
 Route::middleware(['auth'])->group(function () {
     // Formulario de importación
     Route::get('/portfolio/import', [PortfolioImportController::class, 'showImportForm'])
-        ->name('portfolio.import.index');
+        ->name('portfolio.import.form');
     
     // Importar desde JSON Resume
     Route::post('/portfolio/import/json-resume', [PortfolioImportController::class, 'importJsonResume'])
